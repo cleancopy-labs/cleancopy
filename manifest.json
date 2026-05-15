@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "CleanCopy – Copy Without Formatting & Tracking",
+  "version": "1.0.0",
+  "description": "Right-click to copy any text as plain text. Automatically strips formatting, hidden styles, and UTM tracking parameters from URLs.",
+  "permissions": [
+    "contextMenus",
+    "clipboardWrite",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CleanCopy",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
